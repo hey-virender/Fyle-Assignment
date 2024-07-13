@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+body.no-scroll {
+  overflow: hidden; /* Disable scrolling */
+}
+
+.contact-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none; 
+}
+
+.notification.hidden {
+  display: none;
+}
+
+.notification.visible {
+  display: block;
+}
+
+
+
+
+.contact-section .form-section{
+  background-color:white;
+  width:30%;
+  height:50%;
+  padding:1% 3%;
+  display: flex;
+
+}
+.form-section h2 {
+  font-size: 0.8rem;
+  margin-top: 3%;
+  font-weight:600;
+
+}
+.contact-section input{
+  background:transparent;
+  border:none;
+  border-bottom: 1px solid gray;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+.contact-section input:focus{
+  outline:none;
+  border:none;
+  border-bottom: 1px solid gray;
+}
+
+.contact-section input::placeholder{
+  font-size: 0.55rem;
+}
+
+ .email-section input{
+  width:100%;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px; 
+}
+.name-section .input-container{
+  width:45%;
+}
+
+
+.input-container label {
+  position: absolute;
+  top: 58%;
+  left:0;
+  font-weight: 600;
+  transform: translateY(-50%);
+  color: #6F718F99; 
+  pointer-events: none;
+  transition: all 0.2s ease;
+  font-size: 0.55rem;
+}
+
+
+.input-container input {
+  width: 100%; 
+
+}
+
+/* Style the input field when focused */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -4%; 
+ 
+}
+
+.name-section {
+display: flex;
+justify-content: space-between;
+}
+.name-section input{
+  width:100%;
+}
+
+.terms-section{
+  display: flex;
+  align-items: flex-start;
+  font-size:0.6rem;
+  gap:3%;
+  margin-top:4%;
+}
+.terms-section input{
+  appearance: none;
+  height:14px;
+  width:24px;
+  border:1px solid #FF3366 !important;
+  border-radius: 10%;
+
+  
+}
+.terms-section input:checked{
+  background-color: #FF3366;
+  position: relative;
+}
+
+
+.terms-section input:checked::after {
+  content: "\2714";
+  font-size: 12px; 
+  color: white; 
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.contact-section button{
+  width:100%;
+  background-color: #FF3366;
+  border:none;
+  color:white;
+  padding:2% 4%;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-top: 3%;
+
+}
+
+
+
+.page1 {
+  display: flex;
+  padding: 0% 11%;
+  height: 100vh;
+  padding-top: 5%;
+  gap: 1%;
+  justify-content: center;
+}
+
+
+.page1 .left {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0;
+  width: 45%;
+  justify-content: center;
+  gap: 5%;
+}
+
+.page1 .left > span {
+  font-size: 1.16rem;
+  color: #FF3147;
+  font-weight: 500;
+  font-family: "Work Sans",sans-serif;
+}
+
+.page1 .left h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: black;
+  font-family: "Work Sans",sans-serif;
+}
+
+.page1 .left p {
+  font-size: 0.55rem;
+  font-weight: 450;
+  line-height: 2;
+}
+
+.page1 .left button {
+  font-family: "Work Sans",sans-serif;
+  width: 25%;
+  background-color: #FF3147;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.6rem;
+  padding: 2% 0%;
+}
+
+.page1 .right {
+  width: 32%;
+  height: 100%;
+}
+
+.page1 .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.page2 {
+  padding: 0 0 0 21%;
+}
+
+.page2 .top-section span {
+  font-size: 0.9rem;
+  color: #FF3147;
+  margin: 10% 0;
+}
+
+.page2 .heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3%;
+  margin-top: 2%;
+}
+
+.page2 .heading-section .heading {
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 47%;
+  font-family: "Work Sans";
+}
+
+.page2 .heading-section .info {
+  width: 60%;
+  font-size: 0.6rem;
+  line-height: 2;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 4% 0;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  overflow: hidden;
+  transition: transform 0.5s linear;
+}
+
+.carousel-inner .item {
+  display: flex;
+  gap: 1%;
+}
+
+.carousel-inner .item .image-container {
+  width: 25%;
+  position: relative;
+}
+
+.carousel-inner .item img {
+  width: 100%;
+  transition:all 0.5s ease-in-out
+}
+
+.dots-container {
+  position: relative;
+  margin: 3% 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: -5%;
+  left: 1%;
+  display: flex;
+  gap: 20%;
+  width: 20%;
+}
+
+.carousel-dots .dot {
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 100%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.carousel-dots .dot .inner-dot {
+  height: 0.7vw;
+  width: 0.7vw;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 0;
+}
+
+.carousel-dots .dot.active {
+  border: 1px solid #FF3147;
+}
+
+.carousel-dots .dot.active .inner-dot {
+  background-color: #FF3147;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FF3147; /* Pink color with transparency */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-size: 1.5rem;
+  padding:0 4%;
+  
+}
+
+ .overlay .text {
+  color:#FFFFFF;
+  text-align: center;
+  
+}
+.image-container .overlay .text a{
+  text-decoration: none;
+}
+
+.image-container .overlay .icon {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.image-container:hover .image-container>img {
+  opacity: 0;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+
+}
+.image-container .overlay .icon{
+  width:20%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+.image-container .overlay .icon img{
+width: full;
+height:full;
+margin-left: auto;
+margin-right: auto;
+
+}
+.image-container .overlay .heading{
+  font-size: 0.8rem;
+  margin-top: 10%;
+}
+.image-container .overlay .info{
+  font-size: 0.5rem;
+  margin-top: 10%;
+}
+
+.image-container .overlay button{
+  font-size: 0.5rem;
+  font-weight: 700;
+  padding:4% 6%;
+  margin-top: 10%;
+  background-color: #F4F4F4;
+  color:#FF3147;
+  border:none;
+  display:flex;
+  gap:7%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-container .overlay button>img{
+ width:30%;
+}
+
+.page3{
+  margin-top: 7%;
+  padding: 5% 21%;
+}
+
+ .top .title{
+  text-align: center;
+  color:#FF3147;
+  font-size: 0.9rem;
+}
+
+.top .heading{
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.70rem;
+  font-weight: 600;
+  color:black
+}
+.page3 .bottom {
+  display: flex;
+  gap:1%;
+  margin-top: 4%;
+}
+
+.page3 .bottom .icon{
+  width: 25%;
+  height: 25%;
+ 
+}
+.page3 .bottom .icon img{
+  width: 100%;
+  height: 100%;
+}
+.page3 .bottom h3{
+  font-size:0.7rem;
+  font-weight: 500;
+  margin-top: 10%;
+
+}
+.page3 .bottom p{
+  font-size: 0.55rem;
+}
+
+
+.page4{
+  padding: 5% 21%;
+  height: 100vh;
+  margin-bottom: 10%;
+}
+
+
+
+.page4 .bottom{
+  display: flex;
+  gap:2%;
+  margin-top: 5%;
+  height: 90%;
+}
+.page4 .bottom .image-section{
+  width:95%;
+  height:100%;
+  overflow: hidden;
+}
+
+.page4 .bottom .image-section img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.page4 .bottom .card-section{
+  height: 100%;
+  width:51%;
+  cursor:pointer;
+  user-select: none;
+  
+}
+
+.page4 .bottom .card-section .card{
+background-color: #F4F4F4;
+padding:0% 11%;
+border-radius: 0%;
+height:33.33%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+border:none;
+transition: all 0.5s ease-in-out;
+
+}
+
+.page4 .bottom .card-section .card h3{
+  font-size: 0.7rem;
+  font-weight: 550;
+  color:black;
+  display: block;
+}
+.page4 .bottom .card-section .card p{
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: block;
+}
+
+.page4 .bottom .card:hover {
+  background-color:#FF3147
+}
+
+.page4 .bottom .card:hover h3  {
+ color:white
+}
+
+.page4 .bottom .card:hover p  {
+  color:white
+}
+
+.page5{
+  padding: 5% 21%;
+
+  
+}
+
+.page5 .bottom{
+  display:flex;
+  justify-content: center;
+  gap:2%;
+  margin-top: 5%;
+}
+
+.page5 .bottom .box{
+user-select: none;
+cursor: pointer;
+  display: flex;
+  gap:2%;
+  flex-direction: column;
+  justify-content: center;
+  width:25%;
+  padding:5% 2%;
+}
+
+.page5 .bottom .box .icon img{
+
+ height: 60%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.page5 .bottom .box .stats{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.page5 .bottom .box .description{
+  font-size:0.7rem;
+  text-align: center;
+  
+}
+
+.page5 .bottom .box:hover{
+  box-shadow:0px 5px 10px 15px #F4F4F4;
+}
+
+.page6{
+  padding: 1% 21%;
+ 
+}
+
+.page6 .bottom{
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page6 .bottom .feedback{
+  position: relative;
+  font-size: 0.71rem;
+  font-weight: 410;
+  text-align: justify;
+  margin-top: 8%;
+}
+.page6 .bottom .feedback .quotes{
+  position: absolute;
+  top:-28%;
+  left:-2.4%;
+  z-index: -1;
+  width: 10%;
+}
+.feedback .quotes img{
+  width:80%;
+  height: 80%;
+}
+
+.page6 .bottom .author{
+  margin-top: 2.5%;
+  color:#808080;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+.page6 .bottom .author .name{
+  color:#FF3147;
+  font-weight: 700;
+}
+
+footer{
+  margin-top: 4%;
+  background-color: #FF3147;
+  height:37.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer img{
+  display:block;
+  width:60%;
+  height: 18%;
+}
