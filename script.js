@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   cards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
+    card.addEventListener("click", () => {
+      cards.forEach((c) => c.classList.remove("card-clicked"));
+
+      card.classList.add("card-clicked");
+
       const index = card.getAttribute("data-index");
       changeImage(imageSources[index]);
     });

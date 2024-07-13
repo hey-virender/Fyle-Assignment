@@ -513,7 +513,6 @@ transition: all 0.5s ease-in-out;
 .page4 .bottom .card-section .card h3{
   font-size: 0.7rem;
   font-weight: 550;
-  color:black;
   display: block;
 }
 .page4 .bottom .card-section .card p{
@@ -523,17 +522,12 @@ transition: all 0.5s ease-in-out;
   display: block;
 }
 
-.page4 .bottom .card:hover {
-  background-color:#FF3147
+.card-clicked{
+  background-color:#FF3147 !important;
+  color:white !important;
 }
 
-.page4 .bottom .card:hover h3  {
- color:white
-}
 
-.page4 .bottom .card:hover p  {
-  color:white
-}
 
 .page5{
   padding: 5% 21%;
