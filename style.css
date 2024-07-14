@@ -178,10 +178,10 @@ justify-content: space-between;
 
 .page1 {
   display: flex;
-  padding: 0% 11%;
+  padding: 0% 10%;
   height: 100vh;
   padding-top: 5%;
-  gap: 1%;
+  gap: 4%;
   justify-content: center;
 }
 
@@ -203,15 +203,15 @@ justify-content: space-between;
 }
 
 .page1 .left h1 {
-  font-size: 2.2rem;
+  font-size: 2.87rem;
   font-weight: 600;
   color: black;
   font-family: "Work Sans",sans-serif;
 }
 
 .page1 .left p {
-  font-size: 0.55rem;
-  font-weight: 450;
+  font-size: 0.7rem;
+  font-weight: 500;
   line-height: 2;
 }
 
@@ -222,7 +222,8 @@ justify-content: space-between;
   outline: none;
   border: none;
   color: white;
-  font-size: 0.6rem;
+  font-weight: 500;
+  font-size: 0.7rem;
   padding: 2% 0%;
 }
 
@@ -238,33 +239,35 @@ justify-content: space-between;
 }
 
 .page2 {
-  padding: 0 0 0 21%;
+  padding: 0 0 0 17%;
 }
 
 .page2 .top-section span {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #FF3147;
   margin: 10% 0;
+  font-weight: 500;
 }
 
 .page2 .heading-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 3%;
+  gap: 4%;
   margin-top: 2%;
 }
 
 .page2 .heading-section .heading {
-  font-size: 1.7rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 650;
   width: 47%;
   font-family: "Work Sans";
 }
 
 .page2 .heading-section .info {
   width: 60%;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 600;
   line-height: 2;
 }
 
@@ -307,13 +310,13 @@ justify-content: space-between;
   bottom: -5%;
   left: 1%;
   display: flex;
-  gap: 20%;
+  gap: 9%;
   width: 20%;
 }
 
 .carousel-dots .dot {
-  height: 2.5vw;
-  width: 2.5vw;
+  height: 2vw;
+  width: 2vw;
   border-radius: 100%;
   display: flex;
   cursor: pointer;
@@ -366,7 +369,7 @@ justify-content: space-between;
 }
 
 .image-container .overlay .icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 10px;
 }
 .image-container:hover .image-container>img {
@@ -392,16 +395,16 @@ margin-right: auto;
 
 }
 .image-container .overlay .heading{
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-top: 10%;
 }
 .image-container .overlay .info{
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   margin-top: 10%;
 }
 
 .image-container .overlay button{
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   font-weight: 700;
   padding:4% 6%;
   margin-top: 10%;
@@ -415,7 +418,7 @@ margin-right: auto;
   margin-right: auto;
 }
 .image-container .overlay button>img{
- width:30%;
+ width:25%;
 }
 
 .page3{
@@ -426,13 +429,14 @@ margin-right: auto;
  .top .title{
   text-align: center;
   color:#FF3147;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .top .heading{
   text-align: center;
   margin-top: 2%;
-  font-size: 1.70rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color:black
 }
@@ -452,13 +456,13 @@ margin-right: auto;
   height: 100%;
 }
 .page3 .bottom h3{
-  font-size:0.7rem;
+  font-size:0.9rem;
   font-weight: 500;
   margin-top: 10%;
 
 }
 .page3 .bottom p{
-  font-size: 0.55rem;
+  font-size: 0.75rem;
 }
 
 
@@ -511,12 +515,12 @@ transition: all 0.5s ease-in-out;
 }
 
 .page4 .bottom .card-section .card h3{
-  font-size: 0.7rem;
+  font-size: 0.88rem;
   font-weight: 550;
   display: block;
 }
 .page4 .bottom .card-section .card p{
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 400;
   margin-bottom: 0;
   display: block;
@@ -555,20 +559,20 @@ cursor: pointer;
 
 .page5 .bottom .box .icon img{
 
- height: 60%;
+ height: 69%;
  display: block;
  margin-left: auto;
  margin-right: auto;
 }
 
 .page5 .bottom .box .stats{
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .page5 .bottom .box .description{
-  font-size:0.7rem;
+  font-size:0.89rem;
   text-align: center;
   
 }
@@ -589,7 +593,7 @@ cursor: pointer;
 }
 .page6 .bottom .feedback{
   position: relative;
-  font-size: 0.71rem;
+  font-size: 0.89rem;
   font-weight: 410;
   text-align: justify;
   margin-top: 8%;
@@ -610,7 +614,7 @@ cursor: pointer;
   margin-top: 2.5%;
   color:#808080;
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 0.89rem;
 }
 .page6 .bottom .author .name{
   color:#FF3147;
